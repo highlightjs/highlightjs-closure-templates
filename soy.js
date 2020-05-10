@@ -6,7 +6,9 @@ Description: A client- and server-side templating system that helps you dynamica
 Category: template
 */
 export default function(hljs) {
-  var TEMPLATE_KEYWORDS = 'alias as autoescape call case default delcall else elseif fallbackmsg foreach if ifempty let msg namespace param print switch template';
+  var TEMPLATE_KEYWORDS = {
+    keyword: 'alias as autoescape call case default delcall else elseif fallbackmsg foreach if ifempty let msg namespace param print switch template',
+  };
 
   // Partial html tag support
   var TAG_INTERNALS = {
@@ -45,13 +47,17 @@ export default function(hljs) {
         begin: /\{delpackage/,
         ends: /\}/,
         relevance: 10,
-        keywords: 'delpackage'
+        keywords: {
+          keyword: 'delpackage'
+        }
       },
       {
         begin: /\{namespace/,
         end: /\}/,
         relevance: 10,
-        keywords: 'namespace autoescape',
+        keywords: {
+          keyword: 'namespace autoescape'
+        },
         contains: [
           hljs.QUOTE_STRING_MODE
         ]
@@ -61,7 +67,9 @@ export default function(hljs) {
         begin: /\{template/,
         end: /\{\/template\}/,
         relevance: 10,
-        keywords: TEMPLATE_KEYWORDS,
+        keywords: {
+          keyword: TEMPLATE_KEYWORDS
+        },
         contains: [
           hljs.C_BLOCK_COMMENT_MODE,
           hljs.C_LINE_COMMENT_MODE,
