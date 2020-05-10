@@ -1,6 +1,5 @@
 /*
 Language: Closure Templates
-Requires: 
 Author: Chema Balsas <jbalsas@gmail.com>
 Contributors: Chema Balsas <jbalsas@gmail.com>
 Description: A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
