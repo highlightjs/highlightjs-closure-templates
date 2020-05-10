@@ -1,12 +1,11 @@
 /*
 Language: Closure Templates
-Requires: 
 Author: Chema Balsas <jbalsas@gmail.com>
 Contributors: Chema Balsas <jbalsas@gmail.com>
 Description: A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
 Category: template
 */
-function(hljs) {
+export default function(hljs) {
   var TEMPLATE_KEYWORDS = 'alias as autoescape call case default delcall else elseif fallbackmsg foreach if ifempty let msg namespace param print switch template';
 
   // Partial html tag support
@@ -93,4 +92,3 @@ function(hljs) {
     ]
   }
 }
-
