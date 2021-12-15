@@ -1,0 +1,29 @@
+{
+    "name": "highlightjs-closure-templates",
+    "version": "0.0.1",
+    "description": "Google Closure Templates (soy)",
+    "module": "soy.js",
+    "files": [
+        "soy.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/highlightjs/highlightjs-closure-templates.git"
+    },
+    "keywords": [
+        "soy",
+	"closure",
+	"template",
+        "highlight.js",
+        "highlightjs",
+        "syntax-highlight",
+        "syntax"
+    ],
+    "author": "Chema Balsas",
+    "license": "BSD 3-clause",
+    "devDependencies": {
+    },
+    "dependencies": {
+        "highlight.js": "^11.3.1 || ^10.4.1"
+    }
+}
