@@ -22,6 +22,6 @@
     "author": "Chema Balsas",
     "license": "BSD 3-clause",
     "dependencies": {
-        "highlight.js": "^11.5.0 || ^10.4.1"
+        "highlight.js": "^11.9.0 || ^10.4.1"
     }
 }
